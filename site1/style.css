@@ -1,14 +1,21 @@
 body {
-  background-color:rgb(245, 210, 210); /* cor de fundo da página */
+  background-color:rgb(253, 185, 217); /* cor de fundo da página */
   font-family:'Times New Roman', Times, serif;
 }
 
 h1 {
-  color: white; /*cor do título*/
+  color: rgb(252, 247, 220); /*cor do título*/
   text-align: center; /*centraliza o título*/
   font-size: 48px;
-  border: 3px solid #254e8f; 
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 70px;/*deixar i texto mais baixo*/
   font-family: inherit;
+}
+
+h2 {
+  color: rgb(31, 19, 1); /*cor do título*/
+
 }
 p {
   font-size: 17px;
@@ -26,7 +33,7 @@ p {
   display: flex;
   flex-direction: column; /*imagem em cima e o texto embaixo*/
   align-items: center; /*centraliza as coisa escrivinhada dentro*/
-  background-color: rgb(248, 247, 186); 
+  background-color: #FEFEBB; 
   margin: 10px;
   padding: 10px;
   width: 220px;
@@ -35,12 +42,16 @@ p {
 
 .card img {
   width: 100%; /*imagem ocupa todo o card */
+  height: 200px;
+object-fit: cover;
 }
 .card {
   width: 350px;              /*tamanho */
-  border: 2px solid rgb(252, 250, 124);    /*borda */
+  border: 2px solid #FEFEBB;    /*borda */
+
   border-radius: 15px;       /*canto */
   font-family: inherit;
+  box-shadow: 0 4px 10px rgba(8, 0, 5, 0.1);
 }
 
 .card img {
@@ -52,8 +63,8 @@ p {
   border-radius: 5px;       
   font-size: 20px;
   font-family: inherit;
-  background: rgb(163, 204, 218);   
-  border: 1px solid rgb(189, 227, 195); 
+  background: rgb(126, 180, 230);   
+  border: 1px solid rgb(135, 173, 223); 
 }
 .card-cima {
   width: 76vw; 
@@ -61,4 +72,17 @@ p {
   border-radius: 10px;
   margin-bottom: 15px;
   font-family: inherit;
+}
+button {
+  background-color: #f78bc6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover { /*deixa o botão interativo */
+  background-color: #f38ecc;   
+  transform: scale(1.05);
 }
